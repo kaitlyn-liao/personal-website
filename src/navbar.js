@@ -1,50 +1,39 @@
 import React from "react";
 import './App.css';
 import {
-  BrowserRouter as Router,
-  Link
+    BrowserRouter as Router,
+    Link
 } from "react-router-dom";
 
 import Controllers from "./controllers"
 
 class Navbar extends React.Component {
-    render(){
-        return(
+    render() {
+        return (
             <Router>
-                <nav>
-                <ul class="nav justify-content-end nav-pills">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                </nav>
+                <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+                <nav class="uk-navbar uk-margin uk-navbar-container" style={{ backgroundColor: "#DBD9D1" }} uk-navbar>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li>&nbsp;</li>
+                            <li class="uk-active"><a href="/home" uk-icon="icon: home; ratio: 1.5"></a></li>
+                        </ul>
+                    </div>
 
-                <ul>
-                    <li>
-                    <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                    <Link to="/About_Page">About</Link>
-                    </li>
-                    <li>
-                    <Link to="/Resume_Page">Resume</Link>
-                    </li>
-                    <li>
-                    <Link to="/Home_Page">Home</Link>
-                    </li>
-                    <li>
-                    <Link to="/Projects_Page">Projects</Link>
-                    </li>
-                </ul>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li class=""><Link to="/about">About</Link></li>
+                            <li class=""><Link to="/projects">Projects</Link></li>
+                            <li class="">
+                                <Link to="/resume">
+                                    <button class="uk-button uk-button-secondary">Resume</button>
+                                </Link>
+                            </li>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                </nav>
+                </div>
 
                 <Controllers />
             </Router>

@@ -1,6 +1,6 @@
-function Projects_Page() {
+function Projects() {
     return (
         <h2> projects </h2>
     ); 
 }
-export default Projects_Page;
+export default Projects;

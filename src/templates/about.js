@@ -1,8 +1,8 @@
 
-function About_Page() {
+function About() {
     return (
         <h2> About </h2>
     ); 
 }
 
-export default About_Page;
+export default About;

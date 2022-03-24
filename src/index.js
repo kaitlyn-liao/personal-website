@@ -4,6 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import '../node_modules/uikit/dist/css/uikit.css'
+import '../node_modules/uikit/dist/css/uikit-core.css'
+import '../node_modules/uikit/dist/css/uikit-core.min.css'
+import '../node_modules/uikit/dist/css/uikit.min.css'
+
+import '../node_modules/uikit/dist/js/uikit-icons.js'
+import '../node_modules/uikit/dist/js/uikit-icons.min.js'
+import '../node_modules/uikit/dist/js/uikit.js'
+import '../node_modules/uikit/dist/js/uikit.min.js'
+
+import UIkit from '../node_modules/uikit'
+import Icons from '../node_modules/uikit/dist/js/uikit-icons'
+
+// loads the Icon plugin
+UIkit.use(Icons)
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

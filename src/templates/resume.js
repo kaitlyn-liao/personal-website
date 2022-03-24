@@ -1,7 +1,7 @@
-function Resume_Page() {
+function Resume() {
     return (
         <h2> Resume </h2>
     ); 
 }
 
-export default Resume_Page;
+export default Resume;

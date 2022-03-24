@@ -5,26 +5,26 @@ import {
   Route,
 } from "react-router-dom";
 
-import About_Page from "./templates/about"
-import Resume_Page from "./templates/resume"
-import Home_Page from "./templates/home"
-import Projects_Page from "./templates/projects"
+import About from "./templates/about"
+import Resume from "./templates/resume"
+import Home from "./templates/home"
+import Projects from "./templates/projects"
 
 function Controllers() {
     return(
         <div>
             <Switch>
-                <Route path="/About_Page">
-                    <About_Page />
+                <Route path="/About">
+                    <About />
                 </Route>
-                <Route path="/Resume_Page">
-                    <Resume_Page />
+                <Route path="/Resume">
+                    <Resume />
                 </Route>
-                <Route path="/Home_Page">
-                    <Home_Page />
+                <Route path="/Home">
+                    <Home />
                 </Route>
-                <Route path="/Projects_Page">
-                    <Projects_Page />
+                <Route path="/Projects">
+                    <Projects />
                 </Route>
             </Switch>
         </div>
